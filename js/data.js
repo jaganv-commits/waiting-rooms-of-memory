@@ -4,17 +4,17 @@
    ============================================================ */
 
 /* Main photo in "The absence" section. Put the file in images/memorial/ */
-const ABSENCE_IMG = { src: "images/memorial/absence-main.jpg", alt: "The memorial (describe your photo)" };
+const ABSENCE_IMG = { src: "images/memorial/absence-main.jpeg", alt: "The memorial (describe your photo)" };
 
 /* Field photographs. Add a file to images/memorial/ and match the filename here.
    If the file is missing, a labelled placeholder is shown instead. */
 const GALLERY = [
-  { caption: "Wall of Honour panels",  src: "images/memorial/wall-of-honour.jpg" },
-  { caption: "“Daddy’s Poem” plaque",  src: "images/memorial/daddys-poem-plaque.jpg" },
-  { caption: "“We Remember” panel",    src: "images/memorial/we-remember-panel.jpg" },
-  { caption: "Obelisk",                src: "images/memorial/obelisk.jpg" },
-  { caption: "Vijayanta tank",         src: "images/memorial/vijayanta-tank.jpg" },
-  { caption: "Aircraft / helicopter",  src: "images/memorial/aircraft-helicopter.jpg" }
+  { caption: "Wall of Honour panels", src: "images/memorial/wall-of-honour.jpg" },
+  { caption: "“Daddy’s Poem” plaque", src: "images/memorial/daddys-poem-plaque.jpeg" },
+  { caption: "“We Remember” panel", src: "images/memorial/we-remember-panel.jpeg" },
+  { caption: "Obelisk", src: "images/memorial/obelisk.jpeg" },
+  { caption: "Vijayanta tank", src: "images/memorial/vijayanta-tank.jpeg" },
+  { caption: "Aircraft / helicopter", src: "images/memorial/aircraft-helicopter.jpg" }
 ];
 
 /* Sources. Paste each URL between the quotes on the right ("" = no link yet). */
