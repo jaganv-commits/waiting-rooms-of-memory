@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waiting Rooms of Memory — a counter-archive for military families</title>
+<meta name="description" content="An interactive proposal for a counter-archive of military families' memory: the wives, mothers and children absent from the National Military Memorial.">
+<meta property="og:title" content="Waiting Rooms of Memory">
+<meta property="og:description" content="Who is remembered — and who is left waiting? A counter-archive proposal for military families.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#22201d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%95%AF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a href="#problem">Problem</a><a href="#memorial">Memorial</a><a href="#absence">Absence</a>
+  <a href="#counter">Counter-Archive</a><a href="#proposal">Proposal</a><a href="#room">Archive Room</a>
+  <a href="#compare">Record vs Memory</a><a href="#survey">Survey</a><a href="#why">Why It Matters</a>
+  <a href="#photos">Photographs</a><a href="#sources">Sources</a>
+  <span class="sp"></span>
+  <button class="btn alt" id="editBtn">✎ Edit mode</button>
+  <button class="btn" id="saveBtn">Download snapshot</button>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="kicker">Memory, Silence and the Archive</div>
+  <h1 data-edit>Who is remembered — and who is left waiting?</h1>
+  <p data-edit>A counter-archive proposal for the families behind the uniform: the wives, mothers and children whose lives make service possible, but whom the National Military Memorial only gestures toward.</p>
+  <p class="small" style="color:#9d9385" data-edit>Your name · Course / CIA III · Date (replace me)</p>
+  <a class="btn" href="#problem" style="text-decoration:none;display:inline-block">Begin ↓</a>
+</div></header>
+
+<main>
+<section id="problem"><div class="wrap">
+  <div class="kicker">01 · The problem</div>
+  <h2>An archive is never neutral</h2>
+  <p class="lead" data-edit>Archives are structured by what an institution defines as “significant”. The National Military Memorial preserves the soldier through granite names, decorations, regiments and decommissioned hardware. The people who make that service possible are only gestured at emotionally — a poem plaque, a general “we owe families a debt” panel — never archived.</p>
+  <div class="grid" style="margin-top:22px">
+    <div class="card"><h3>Not accidental</h3><div data-edit>The record-keeping categories — postings, ranks, casualties — were never designed to hold domestic or emotional history.</div></div>
+    <div class="card"><h3>Symbolic annihilation</h3><div data-edit>Caswell’s term: a group’s near-total archival absence works as a statement that their experience does not warrant remembering.</div></div>
+    <div class="card"><h3>Research question</h3><div data-edit>How does the Memorial’s archival logic exclude military families, and what would an archive built on families’ own authority over their representation look like?</div></div>
+  </div>
+  <div class="flag">Placeholder: add your Derrida / Mbembe framing sentence from Segment A here.</div>
+</div></section>
+
+<section id="memorial"><div class="wrap">
+  <div class="kicker">02 · The existing archive</div>
+  <h2>What the Memorial remembers</h2>
+  <p class="lead">Wall of Honour, obelisk, Roll of Honour, regimental records, decommissioned Vijayanta tank, aircraft and helicopter. Tap a category to see what it lets us remember — and what stays outside its frame.</p>
+  <div class="chips" id="memChips"></div>
+  <div class="two">
+    <div class="panel yes"><div class="small">WHAT THIS LETS US REMEMBER</div><div id="memYes">Select a category above.</div></div>
+    <div class="panel no"><div class="small">WHAT STAYS OUTSIDE THE FRAME</div><div id="memNo">Select a category above.</div></div>
+  </div>
+</div></section>
+
+<section id="absence"><div class="wrap">
+  <div class="kicker">03 · The absence</div>
+  <h2>What the frame leaves out</h2>
+  <p class="lead">Tap the questions to ask what the image cannot answer.</p>
+  <figure>
+    <div class="slot" id="absenceSlot" style="min-height:340px">
+      <div class="ph">PLACEHOLDER — add your memorial photo as<br><b>images/memorial/absence-main.jpg</b></div>
+      <div class="hot" id="hot"></div>
+    </div>
+    <figcaption data-edit>Caption: location, date taken, what is shown (replace me).</figcaption>
+  </figure>
+  <div class="q" id="hotQ" aria-live="polite"></div>
+</div></section>
+
+<section id="counter"><div class="wrap">
+  <div class="kicker">04 · Definition</div>
+  <h2>What is a counter-archive?</h2>
+  <p class="lead" data-edit>In plain terms: a collection built by the people an official archive leaves out, on their terms. In Caswell’s sense, it corrects symbolic annihilation by turning families from backdrop into archival subjects.</p>
+  <div class="eq">
+    <span class="b">Official Archive</span><b>+</b><span class="b">Counter-Archive</span><b>=</b><span class="b last">A more complex memory</span>
+  </div>
+  <p class="small">Your own one-line definition from the essay: <span data-edit>[your definition here]</span></p>
+</div></section>
+
+<section id="proposal"><div class="wrap">
+  <div class="kicker">05 · The proposal</div>
+  <h2>Waiting Rooms of Memory</h2>
+  <p class="lead">A pan-India, physical-digital hybrid archive, built with families rather than about them.</p>
+  <div class="chips" id="propChips"></div>
+  <div class="panel" id="propBody"></div>
+</div></section>
+
+<section id="room"><div class="wrap">
+  <div class="kicker">06 · Interactive archive room</div>
+  <h2>Step inside</h2>
+  <p class="lead">Four kinds of material the archive would hold. Tap a card to open it.</p>
+  <div class="flag">Sample structure only. No real testimonies exist yet — every item below is a labelled placeholder to be replaced with a genuinely contributed item, with the contributor’s consent.</div>
+  <div class="grid" id="items"></div>
+</div></section>
+
+<section id="compare"><div class="wrap">
+  <div class="kicker">07 · Comparison</div>
+  <h2>Record vs. Memory</h2>
+  <div class="switch" id="sw"><button class="on" data-v="record">Record</button><button data-v="memory">Memory</button></div>
+  <div class="panel" style="margin-top:16px"><ul id="swList" style="margin:0;padding-left:20px"></ul></div>
+</div></section>
+
+<section id="survey"><div class="wrap">
+  <div class="kicker">08 · Primary evidence</div>
+  <h2>What people told us</h2>
+  <p class="lead">Small university survey, 11 respondents (18+), anonymised. Indicative, not representative.</p>
+  <div class="flag">Numbers below were read from the exported PDF, where columns run together. Check each against your spreadsheet before submitting, then delete this note.</div>
+  <div class="grid">
+    <div class="card"><div class="stat" data-edit>11</div><div class="small" data-edit>respondents: 3 family (not bereaved), 2 bereaved family, 3 veterans/serving, 3 general public</div></div>
+    <div class="card"><div class="stat" data-edit>0 of 3</div><div class="small" data-edit>general-public respondents rated “memorials adequately represent families” above 3 (ratings 1, 2, 3)</div></div>
+    <div class="card"><div class="stat" data-edit>4 of 6</div><div class="small" data-edit>non-bereaved family and veterans said they would contribute; 1 “maybe”, 1 “need more information”</div></div>
+    <div class="card"><div class="stat" data-edit>5 of 6</div><div class="small" data-edit>rated control over public / restricted / private access 4 or 5 out of 5</div></div>
+    <div class="card"><div class="stat" data-edit>2 of 2</div><div class="small" data-edit>bereaved respondents who answered chose contributions “visible only to other military families”</div></div>
+  </div>
+  <h3 style="margin:28px 0 12px">In their words</h3>
+  <div class="grid">
+    <blockquote><span data-edit>The quiet strength required to keep a household functioning while receiving minimal news during active deployments is completely omitted from national narratives.</span><cite>Spouse of a service member · anonymised survey response</cite></blockquote>
+    <blockquote><span data-edit>Growing up shifting schools every two years and enduring months of zero contact during high-altitude postings shapes a child’s entire life, but it’s invisible in public history.</span><cite>Child of a service member · anonymised survey response</cite></blockquote>
+    <blockquote><span data-edit>A living archive that tells visitors about someone’s dreams, his humor, and the quiet sacrifices made by parents back in the village.</span><cite>Mother of a late service member · anonymised survey response</cite></blockquote>
+    <blockquote><span data-edit>Memorials are designed as national monuments to inspire patriotism and solemnity; they aren’t structured as museum archives detailing personal or domestic lives.</span><cite>General public · anonymised survey response</cite></blockquote>
+  </div>
+  <p class="small">The findings support the design: tiered access (control matters), trusted intermediaries (some need more information first), and audio as a contribution format.</p>
+</div></section>
+
+<section id="why"><div class="wrap">
+  <div class="kicker">09 · Why it matters</div>
+  <h2>Four reasons</h2>
+  <div class="grid">
+    <div class="card"><h3>Memory</h3><div data-edit>Waiting, mourning and domestic labour become part of what the nation is asked to remember.</div></div>
+    <div class="card"><h3>Representation</h3><div data-edit>Caswell: families become archival subjects, not backdrop.</div></div>
+    <div class="card"><h3>Authority</h3><div data-edit>Christen / CARE: the authority to control representation sits with contributors, enforced through consent and access tiers.</div></div>
+    <div class="card"><h3>Structural silence</h3><div data-edit>Stoler: the exclusion is structural, not incidental. The military record was never built to govern domestic labour.</div></div>
+  </div>
+  <div class="panel" style="margin-top:28px;text-align:center">
+    <div class="q" style="min-height:0">If an archive shapes who a nation is asked to remember, who should decide what belongs in it?</div>
+    <div class="chips" style="justify-content:center" id="refl"></div>
+    <div id="reflOut" class="small" style="min-height:3em" aria-live="polite"></div>
+  </div>
+</div></section>
+
+<section id="photos"><div class="wrap">
+  <div class="kicker">Photographs</div>
+  <h2>Field photographs</h2>
+  <p class="lead">Your own photographs of the memorial, loaded from the <code>images/memorial/</code> folder (filenames are listed in <code>js/data.js</code>).</p>
+  <div class="grid" id="gallery"></div>
+</div></section>
+
+<section id="sources"><div class="wrap">
+  <div class="kicker">Sources</div>
+  <h2>References</h2>
+  <div class="flag">Entries name the theorists you cited; check titles, years and editions against your essay’s bibliography. Paste links into <code>js/data.js</code>.</div>
+  <ul id="srcList" style="padding-left:20px"></ul>
+  <button class="btn alt edit-only" id="addSrc" style="display:none">+ Add source</button>
+</div></section>
+</main>
+
+<footer>University coursework project · Survey responses summarised in anonymised form · <span data-edit>Your name, course, year</span></footer>
+
+<input type="file" id="file" accept="image/*" hidden>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
