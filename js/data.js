@@ -9,7 +9,7 @@ const ABSENCE_IMG = { src: "images/memorial/absence-main.jpg", alt: "The memoria
 /* Field photographs. Add a file to images/memorial/ and match the filename here.
    If the file is missing, a labelled placeholder is shown instead. */
 const GALLERY = [
-  { caption: "Wall of Honour panels",  src: "images/memorial/wall-of-honour.jpg" },
+  { caption: "Daddy’s Poem” plaque",  src: "images/memorial/wall-of-honour.jpg" },
   { caption: "“Daddy’s Poem” plaque",  src: "images/memorial/daddys-poem-plaque.jpg" },
   { caption: "“We Remember” panel",    src: "images/memorial/we-remember-panel.jpg" },
   { caption: "Obelisk",                src: "images/memorial/obelisk.jpg" },
