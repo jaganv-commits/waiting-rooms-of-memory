@@ -11,11 +11,10 @@ const ABSENCE_IMG = {
 
 const GALLERY = [
   { caption: "Wall_Of_honor", src: "images/memorial/wall-of-honour.jpg" },
-  { caption: "“Daddy’s Poem” plaque", src: "images/memorial/daddys-poem-plaque.jpeg" },
-  { caption: "“We Remember” panel", src: "images/memorial/we-remember-panel.jpeg" },
-  { caption: "Obelisk", src: "images/memorial/obelisk.jpeg" },
-  { caption: "Vijayanta tank", src: "images/memorial/vijayanta-tank.jpeg" },
-  { caption: "Aircraft / helicopter", src: "images/memorial/aircraft-helicopter.jpg" }
+  { caption: "“We Remember” plaque", src: "images/memorial/daddys-poem-plaque.jpeg" },
+  { caption: "“Obelisk” panel", src: "images/memorial/we-remember-panel.jpeg" },
+  { caption: "Vijayanta tank", src: "images/memorial/obelisk.jpeg" },
+  { caption: "Aircraft / helicopter", src: "images/memorial/vijayanta-tank.jpeg" },
 ];
 /* Sources. Paste each URL between the quotes on the right ("" = no link yet). */
 const SRC = [
